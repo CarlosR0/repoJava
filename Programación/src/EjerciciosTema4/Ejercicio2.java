@@ -3,9 +3,9 @@ package EjerciciosTema4;
 import java.util.Scanner;
 
 public class Ejercicio2 {
-	
+
 	public static String getMinusculas(String frase) {
-		frase = frase.trim().toLowerCase();	
+		frase = frase.trim().toLowerCase();
 		return frase;
 	}
 

@@ -1,13 +1,8 @@
-package EjerciciosTema4;
+package EjerciciosTema4.Ejercicio6;
 
 import java.util.Scanner;
 
-public class Ejercicio5 {
-
-	public static int sumar(int num1, int num2) {
-		int resultado = num1 + num2;
-		return resultado;
-	}
+public class Test {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -15,7 +10,7 @@ public class Ejercicio5 {
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
 		sc.close();
-		int resultado = sumar(num1, num2);
+		int resultado = Calculadora.sumar(num1, num2);
 		System.out.println(num1 + " + " + num2 + " = " + resultado);
 
 	}

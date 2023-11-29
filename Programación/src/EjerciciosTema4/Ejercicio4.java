@@ -1,9 +1,28 @@
 package EjerciciosTema4;
 
+import java.util.Scanner;
+
 public class Ejercicio4 {
 
-	public static void main(String[] args) {
+	public static String getMayMin(int tipoLetra, String frase) {
+		if (tipoLetra == 1) {
+			return Ejercicio1.getMayusculas(frase);
+		} else {
+			return Ejercicio2.getMinusculas(frase);
 
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Mete el numero 1 para mayusculas y el numero 2 para minusculas.");
+		int tipoLetra = sc.nextInt();
+		sc.nextLine();
+		System.out.println("Mete una frase.");
+		String frase = sc.nextLine();
+		sc.close();
+		String resultado = getMayMin(tipoLetra, frase);
+		System.out.println(resultado);
 	}
 
 }
