@@ -1,4 +1,4 @@
-package prueba2;
+package zPrueba;
 
 import java.util.Scanner;
 

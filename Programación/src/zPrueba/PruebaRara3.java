@@ -1,4 +1,4 @@
-package prueba2;
+package zPrueba;
 
 public class PruebaRara3 {
 
