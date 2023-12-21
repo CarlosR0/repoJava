@@ -38,7 +38,8 @@ public class PruebaRara2 {
 
 					min = lista[j];
 					lista[i] = lista[j];
-					lista[j] = lista[i];
+					lista[j] = min;
+					min = 9999999;
 				}
 
 

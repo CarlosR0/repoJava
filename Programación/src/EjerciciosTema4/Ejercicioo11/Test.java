@@ -14,6 +14,7 @@ public class Test {
 		Integer n = 0;
 		Integer resultado = ArrayUtils.imprimirArray(palabras, color,n);
 		System.out.println(resultado);
+		
 	}
 
 }

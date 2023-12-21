@@ -2,13 +2,13 @@ package Recursividad.Ejercicio6;
 
 public class Metodo {
 
-	public static void imprimirArray (String[] array, Integer num, Integer longitud) {
+	public static int imprimirArray (Integer[] array, Integer num, Integer longitud, Integer cont) {
 		
 		if (num < longitud) {
-			System.out.print(array[num]);			
-			imprimirArray(array,num+1,longitud);
+			cont = array[num] + cont;
+			imprimirArray(array,num+1,longitud,cont);
 		}
-		
+		return cont;
 	}
 
 }
