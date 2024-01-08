@@ -1,4 +1,4 @@
-package zPrueba;
+package zPrueba.Libro;
 
 public class LibroPrueba {
 
@@ -8,11 +8,13 @@ public class LibroPrueba {
 		x.setEditorial("Verduras");
 		x.setNumPaginas(173);
 		x.setTitulo("La alcachofa");
-		x.setMaterial("papel");
+//	se puede poner ->	x.setMaterial("papel");
+		Libro.setMaterial("papel");
 		System.out.println(x.getAutor());
 		System.out.println(x.getEditorial());
 		System.out.println(x.getNumPaginas());
 		System.out.println(x.getTitulo());
-		System.out.println(x.getMaterial());
+//	se puede poner ->	System.out.println(x.getMaterial());
+		System.out.println(Libro.getMaterial());
 	}
 }

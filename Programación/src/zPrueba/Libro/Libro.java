@@ -1,4 +1,4 @@
-package zPrueba;
+package zPrueba.Libro;
 
 public class Libro {
 
