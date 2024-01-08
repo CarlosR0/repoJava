@@ -48,4 +48,16 @@ public class Libro {
 		Libro.material = material;
 	}
 
+	public Libro(String titulo, String autor, String editorial, Integer numPaginas) {
+		this.titulo = titulo;
+		this.autor = autor;
+		this.editorial = editorial;
+		this.numPaginas = numPaginas;
+	}
+	public Libro() {
+		this.titulo = "No se sabe";
+		this.autor = "No se sabe";
+		this.editorial = "No se sabe";
+		this.numPaginas = 0;
+	}
 }

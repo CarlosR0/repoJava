@@ -8,5 +8,10 @@ public class PruebaRara3 {
 	String num2 = "carlo";
 	int x = num1.compareTo(num2);
 System.out.println(x);
+float y = 1111111111/3;
+  int s = 1111111111;
+double z = 11.0/3.0;
+System.out.println(y);
+System.out.println(z);
 	}
 }
