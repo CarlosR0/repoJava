@@ -13,5 +13,6 @@ float y = 1111111111/3;
 double z = 11.0/3.0;
 System.out.println(y);
 System.out.println(z);
+System.out.println(s);
 	}
 }
