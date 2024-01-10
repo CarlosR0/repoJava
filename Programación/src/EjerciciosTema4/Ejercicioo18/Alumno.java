@@ -39,6 +39,14 @@ public class Alumno {
 		this.nota = nota;
 	}
 
+	public Alumno() {
+		super();
+		this.dni = "Nada";
+		this.nombre = "Nada";
+		this.edad = null;
+		this.nota = null;
+	}
+
 	public Alumno(String dni, String nombre, Integer edad, Double nota) {
 		super();
 		this.dni = dni;
@@ -47,11 +55,4 @@ public class Alumno {
 		this.nota = nota;
 	}
 
-	public Alumno() {
-		super();
-		this.dni = "Nada";
-		this.nombre = "Nada";
-		this.edad = null;
-		this.nota = null;
-	}
 }
