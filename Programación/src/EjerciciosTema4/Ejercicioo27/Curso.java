@@ -1,4 +1,4 @@
-package EjerciciosTema4.Ejercicioo24;
+package EjerciciosTema4.Ejercicioo27;
 
 public class Curso {
 	private String identificador;
