@@ -1,4 +1,4 @@
-package EjerciciosTema4.Ejercicioo28;
+package EjerciciosTema4.Ejercicioo29;
 
 import java.util.Scanner;
 
@@ -32,6 +32,10 @@ public class TestAlumno {
 			alumnos[i].setNota(sc.nextDouble());
 			sc.nextLine();
 			alumnos[i].setCurso(curso);
+			if (!(alumnos[i].validar())) {
+				System.err.println("Algun dato es erroneo, repita el alumno.");
+				i--;
+			}
 		}
 		sc.close();
 
