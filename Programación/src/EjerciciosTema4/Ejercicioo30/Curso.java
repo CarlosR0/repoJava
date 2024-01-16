@@ -13,21 +13,19 @@ public class Curso {
 	public void addAlumno(Alumno alumnoNuevo) {
 		for (int i = 0; i < alumnos.length; i++) {
 			if (this.alumnos[i] == null) {
-				
 				this.alumnos[i] = alumnoNuevo;
 				break;
 			}
 		}
 	}
-	
+
 	public Alumno[] getAlumnos() {
 		return alumnos;
 	}
-	
+
 	public String getIdentificador() {
 		return identificador;
 	}
-
 
 	public void setIdentificador(String identificador) {
 		this.identificador = identificador;
