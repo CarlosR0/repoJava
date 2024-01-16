@@ -1,4 +1,4 @@
-package EjerciciosTema4.Ejercicioo29;
+package EjerciciosTema4.Ejercicioo30;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class TestAlumno {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		Curso curso = new Curso();
+		Curso curso = new Curso(3);
 		curso.setDescripcion("DAM-DAW");
 		curso.setIdentificador("1");
 
