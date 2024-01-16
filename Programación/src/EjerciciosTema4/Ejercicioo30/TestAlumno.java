@@ -32,6 +32,7 @@ public class TestAlumno {
 			alumnos[i].setNota(sc.nextDouble());
 			sc.nextLine();
 			alumnos[i].setCurso(curso);
+			curso.addAlumno(alumnos[i]);
 			if (!(alumnos[i].validar())) {
 				System.err.println("Algun dato es erroneo, repita el alumno.");
 				System.out.println();
