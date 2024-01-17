@@ -31,16 +31,17 @@ public class TestAlumno {
 			System.out.println("Dime la nota del " + (i + 1) + "º alumno");
 			alumnos[i].setNota(sc.nextDouble());
 			sc.nextLine();
-			alumnos[i].setCurso(curso);
 			curso.addAlumno(alumnos[i]);
 			if (!(alumnos[i].validar())) {
 				System.err.println("Algun dato es erroneo, repita el alumno.");
 				System.out.println();
 				i--;
+				continue;
 			}
+			alumnos[i].setCurso(curso);
 		}
 		sc.close();
-
+		
 		if (alumnos[0].equals(alumnos[1]) && alumnos[0].equals(alumnos[2])) {
 			System.err.println("Todos los alumnos son iguales");
 		} else {
