@@ -1,4 +1,4 @@
-package EjerciciosTema4.Semaforo;
+package EjerciciosTema4.Ejercicioo33;
 
 public class Semaforo {
 
