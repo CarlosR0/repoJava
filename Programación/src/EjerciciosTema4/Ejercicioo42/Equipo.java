@@ -1,4 +1,4 @@
-package EjerciciosTema4.Ejercicioo41;
+package EjerciciosTema4.Ejercicioo42;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,12 +7,21 @@ import java.util.Objects;
 public class Equipo {
 	private String nombre;
 	private Jugador capitan;
+	private static String competicion;
 	private List<Jugador> jugadores;
 
 	public Equipo(String nombre) {
 		super();
 		jugadores = new ArrayList<Jugador>();
 		this.nombre = nombre;
+	}
+
+	public static String getCompeticion() {
+		return competicion;
+	}
+
+	public static void setCompeticion(String competicion) {
+		Equipo.competicion = competicion;
 	}
 
 	public String getNombre() {

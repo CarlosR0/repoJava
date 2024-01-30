@@ -1,4 +1,4 @@
-package EjerciciosTema4.Ejercicioo41;
+package EjerciciosTema4.Ejercicioo42;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +11,9 @@ public class Test {
 		
 		
 
-		Equipo equipoLocal = crearEquipo(sc, "local");
+		Equipo equipoLocal = crearEquipo(sc,"local");
 
-		Equipo equipoVisitante = crearEquipo(sc, "visitante");
+		Equipo equipoVisitante = crearEquipo(sc,"visitante");
 
 		System.out.println(equipoLocal);
 		System.out.println(equipoVisitante);
@@ -40,6 +40,11 @@ public class Test {
 		Integer ultimo = equipoLocal.getJugadores().size();
 		equipoLocal.setCapitan(equipoLocal.getJugadores().get(ultimo-1));
 		System.out.println(equipoLocal);
+		
+		equipoLocal.setCompeticion("Liga Nacional");
+		System.out.println(equipoVisitante.getCompeticion());
+		equipoVisitante.setCompeticion("Copa Internacional");
+		System.out.println(equipoLocal.getCompeticion());
 
 	}
 
