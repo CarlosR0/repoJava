@@ -8,12 +8,14 @@ public abstract class Movimiento {
 	protected LocalDate fecha;
 	protected BigDecimal importe;
 
-	public Movimiento(LocalDate fecha2, BigDecimal importe2) {
-
+	public Movimiento(BigDecimal importe2) {
+		this.importe = importe2;
+		this.fecha = LocalDate.now();
 	}
+
+	public abstract String toString();
+
+	public abstract String getTipo();
 
 	public abstract BigDecimal getImporte();
-	}
-
-	
-
+}
