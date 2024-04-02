@@ -25,7 +25,7 @@ public class Test {
 		
 		do {
 			System.out.print("Dime una letra: ");
-			palabra = sc.nextLine();
+			palabra = sc.nextLine().toLowerCase();
 			if (palabra.equalsIgnoreCase("FIN") || palabra.isEmpty()) {
 				System.out.println("Gracias por poner las palabras. Bye");
 				break;
