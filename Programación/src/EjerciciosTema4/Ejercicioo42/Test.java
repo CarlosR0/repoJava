@@ -41,10 +41,10 @@ public class Test {
 		equipoLocal.setCapitan(equipoLocal.getJugadores().get(ultimo-1));
 		System.out.println(equipoLocal);
 		
-		equipoLocal.setCompeticion("Liga Nacional");
-		System.out.println(equipoVisitante.getCompeticion());
-		equipoVisitante.setCompeticion("Copa Internacional");
-		System.out.println(equipoLocal.getCompeticion());
+		Equipo.setCompeticion("Liga Nacional");
+		System.out.println(Equipo.getCompeticion());
+		Equipo.setCompeticion("Copa Internacional");
+		System.out.println(Equipo.getCompeticion());
 
 	}
 

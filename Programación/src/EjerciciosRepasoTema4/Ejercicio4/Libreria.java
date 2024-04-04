@@ -7,7 +7,9 @@ import java.util.List;
 
 public class Libreria {
 	private List<Libro> libros;
+	@SuppressWarnings("unused")
 	private String direccion;
+	@SuppressWarnings("unused")
 	private BigDecimal numTelefono;
 
 	public Libreria(String direccion, BigDecimal numTelefono) {
