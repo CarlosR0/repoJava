@@ -1,37 +1,41 @@
-package zPrueba.PruebaBBDD;
+package EjerciciosTema6.Ejercicio1;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalDate;
 
-public class Gatos {
-	public List<Gato> consultarGato(Integer edadMinima, String inicial) {
-		List<Gato> gatos = new ArrayList<Gato>();
-		String sql = "select * from GATOS where edad > ? and nombre like ?";
+public class Personas {
+	public Persona consultarPersonas(String dni) throws ErrorException {
+		Persona persona = new Persona();
+		String sql = "select * from personas where DNI = ?";
 		try (Connection con = abrirConexion(); PreparedStatement stmt = con.prepareStatement(sql)) {
-			stmt.setInt(1, edadMinima);
-			stmt.setString(2, inicial + "%");
+			stmt.setString(1, dni);
 			// Ejecutamos el sql
 			ResultSet rs = stmt.executeQuery();
 			// Leemos el result set
 			while (rs.next()) {
-				Gato gato = new Gato();
-				gato.setCodigo(rs.getString("CODIGO"));
-				gato.setNombre(rs.getString("NOMBRE"));
-				gato.setRaza(rs.getString("RAZA"));
-				gato.setEdad(rs.getInt("EDAD"));
-				gatos.add(gato);
+				persona.setDni(rs.getString("DNI"));
+				persona.setNombre(rs.getString("NOMBRE"));
+				persona.setApellido(rs.getString("APELLIDOS"));
+				Date date = rs.getDate("FECHA_NACIMIENTO");
+				LocalDate fecha = date.toLocalDate();
+				persona.setFechaNacimiento(fecha);
+//				System.out.println("DNI: " + rs.getString("DNI"));
+//				System.out.println("NOMBRE: " + rs.getString("NOMBRE"));
+//				System.out.println("APELLIDOS: " + rs.getString("APELLIDOS"));
+
+				// persona.setFechaNacimiento(rs.getDate.toLocalDate("FECHA_NACIMIENTO"));
+
 			}
 
 		} catch (SQLException e) {
-
+			throw new ErrorException();
 		}
-
-		return gatos;
+		return persona;
 	}
 
 	public void testConexion() {
