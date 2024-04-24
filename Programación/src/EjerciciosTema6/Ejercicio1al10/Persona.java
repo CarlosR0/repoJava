@@ -1,4 +1,4 @@
-package EjerciciosTema6.Ejercicio1;
+package EjerciciosTema6.Ejercicio1al10;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -8,6 +8,18 @@ public class Persona {
 	private String nombre;
 	private String apellido;
 	private LocalDate fechaNacimiento;
+
+	public Persona(String dni, String nombre, String apellido, LocalDate fechaNacimiento) {
+		super();
+		this.dni = dni;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.fechaNacimiento = fechaNacimiento;
+	}
+
+	public Persona() {
+		super();
+	}
 
 	public String getDni() {
 		return dni;

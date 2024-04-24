@@ -1,4 +1,4 @@
-package EjerciciosTema6.Ejercicio1;
+package EjerciciosTema6.Ejercicio1al10;
 
 public class NoExisteException extends Exception {
 
